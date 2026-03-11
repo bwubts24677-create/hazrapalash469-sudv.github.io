@@ -1,190 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Palash Hazra | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
-}
-
-nav h2{
-color:#38bdf8;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-}
-
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.hero p{
-margin-top:20px;
-color:#94a3b8;
-}
-
-.btn{
-margin-top:30px;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:600;
-}
-
-/* SECTIONS */
-
-section{
-padding:80px 10%;
-}
-
-section h2{
-margin-bottom:30px;
-}
-
-/* SKILLS */
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-}
-
-.skill{
-background:#1e293b;
-padding:10px 20px;
-border-radius:30px;
-}
-
-/* PROJECTS */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card a{
-display:inline-block;
-margin-top:10px;
-color:#38bdf8;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-color:#94a3b8;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
 <nav>
-
-<h2>Palash</h2>
-
-<div>
-<a href="#">Home</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-
+<h2 class="logo">Palash</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
+</header>
 
-
-<div class="hero">
+<section id="home" class="hero">
 
 <h1>Hello, I'm <span>Palash Hazra</span></h1>
+<p id="typing"></p>
 
-<p>BTech Student | Aspiring Web Developer</p>
-
-<a class="btn" href="https://github.com/hazrapalash469-sudv" target="_blank">
+<a href="https://github.com/hazrapalash469-sudv" target="_blank" class="btn">
 View My GitHub
 </a>
 
-</div>
-
-
-<section>
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Git</div>
-
-</div>
-
 </section>
 
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a BTech student passionate about web development.
+I enjoy building modern websites and learning new technologies.
+</p>
+
+</section>
 
 <section id="projects">
 
@@ -195,32 +52,41 @@ View My GitHub
 <div class="card">
 <h3>Scientific Calculator</h3>
 <p>Advanced calculator built using JavaScript.</p>
-<a href="#">Source Code</a>
 </div>
 
 <div class="card">
 <h3>Typing Speed Tester</h3>
-<p>Test typing speed and accuracy.</p>
-<a href="#">Source Code</a>
+<p>Check typing speed and accuracy.</p>
 </div>
 
 <div class="card">
-<h3>Tic Tac Toe Game</h3>
-<p>Interactive JavaScript game.</p>
-<a href="#">Source Code</a>
+<h3>Tic Tac Toe</h3>
+<p>Interactive browser game.</p>
 </div>
 
 </div>
 
 </section>
 
+<section id="contact">
 
-<footer id="contact">
+<h2>Contact</h2>
 
-<p>Connect with me on GitHub or LinkedIn</p>
+<p>Email: your@email.com</p>
+
+<p>
+<a href="https://linkedin.com">LinkedIn</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Palash Hazra</p>
 
 </footer>
 
-</body>
+<script src="script.js"></script>
 
+</body>
 </html>
